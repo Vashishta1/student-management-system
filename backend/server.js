@@ -9,10 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://yerrasriram12:dREDmmkI4PiE85lG@cluster0.9imdvmk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+mongoose.connect('mongodb+srv://root:12345@cluster0.ijjgfjy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(() => console.log('✅ MongoDB connected'))
 .catch((err) => console.error('❌ MongoDB error:', err));
 
